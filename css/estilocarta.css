@@ -1,0 +1,24 @@
+body {
+    padding-left: 25pt;
+    padding-right: 25pt;
+    padding-top: 15pt;
+    padding-bottom: 10pt;
+}
+
+header {
+    text-align: right;
+}
+
+footer {
+    margin-top: 10%;
+}
+
+.tabulador {
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    margin-left: 25pt;
+}
+
+a {
+    color: blue;
+}
