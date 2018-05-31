@@ -22,6 +22,10 @@ footer {
     color: rgb(64, 65, 61);
 }
 
+footer address {
+    font-weight: bold;
+}
+
 .tabulador {
     margin-top: 0.5%;
     margin-bottom: 0.5%;
