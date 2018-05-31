@@ -3,22 +3,61 @@ body {
     padding-right: 25pt;
     padding-top: 15pt;
     padding-bottom: 10pt;
+    background-color: rgb(217, 218, 165);
 }
 
 header {
     text-align: right;
+    background-color: rgba(230, 186, 90, 0.582);
+}
+
+article {
+    background-color: rgb(174, 212, 212);
+    color: rgb(100, 100, 37);
 }
 
 footer {
     margin-top: 10%;
+    background-color: rgb(198, 224, 131);
+    color: rgb(64, 65, 61);
 }
 
 .tabulador {
     margin-top: 0.5%;
     margin-bottom: 0.5%;
     margin-left: 25pt;
+    background-color: silver;
+}
+
+em {
+    color: rgb(187, 3, 3);
+}
+
+address {
+    color: brown;
+}
+
+p {
+    color: rgb(99, 47, 11);
+}
+
+h3 {
+    color: rgb(71, 130, 238);
+}
+
+li {
+    background-color: rgb(124, 194, 161);
+    color: rgb(29, 134, 43);
 }
 
 a {
     color: blue;
+}
+
+a:hover {
+    color: brown;
+}
+
+a:active {
+    color: red;
 }
