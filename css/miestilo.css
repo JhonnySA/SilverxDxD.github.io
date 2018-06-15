@@ -1,8 +1,43 @@
-header {
+section {
+    margin: 10px;
+}
+
+h1,
+h2,
+h5,
+h6 {
+    text-align: center;
+}
+
+#cita {
     text-align: right;
 }
 
-body {
-    color: brown;
-    background: azure;
+#menu {
+    background-color: cadetblue;
+}
+
+#carta {
+    text-align: right;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
+#logito {
+    margin-left: 30%;
+}
+
+img {
+    padding: 20px;
+    margin: auto;
 }

@@ -1,0 +1,73 @@
+#titulo {
+    width: 50%;
+}
+
+#referencia {
+    text-align: right;
+}
+
+#contenedor {
+    width: 500px;
+    position: absolute;
+    left: 30%;
+    border-left-style: dashed;
+    border-left-width: 5px;
+    border-right-style: dashed;
+    border-right-width: 5px;
+}
+
+address {
+    text-align: right;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: rgb(161, 155, 155);
+    width: 200px;
+    height: 600px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.sec {
+    background-color: white;
+}
+
+article {
+    margin: 5%;
+    background-color: white;
+    border-radius: 5%;
+    border-style: hidden;
+}
+
+#guerra {
+    float: left;
+}
+
+#mundo {
+    float: left;
+}
+
+#deporte {
+    float: left;
+}
+
+#cultura {
+    float: left;
+}
+
+#icono_anclaje {
+    position: absolute;
+    top: 450px;
+    left: 520px;
+}
+
+#icono2_anclaje {
+    position: absolute;
+    top: 800px;
+    left: 520px;
+}
