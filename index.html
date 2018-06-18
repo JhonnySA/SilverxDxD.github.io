@@ -18,182 +18,370 @@
 
     <!--Css fuente iconos FONT AWESOME-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!--Efectos para el texto-->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!--Fuentes de letra-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,700" rel="stylesheet">
 </head>
 
-<body class="container">
+<body>
     <header id="inicio">
-        <hr>
-        <p id="cita" class="alert alert-warning"><cite>"Piensa no solo en lo más logico, sino también en aquello que te apasiona"</cite></p>
-        <hr>
-        <ol id="menu" class="nav justify-content-center">
-            <li class="nav-item"><a class="nav-link" href="#biografia"><i class="fas fa-home"></i> Biografia</a></li>
-            <li class="nav-item"><a class="nav-link" href="#pasatiempo"><i class="fab fa-hubspot"></i> Pasatiempos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#lugar"><i class="fas fa-plane"></i> Lugares turisticos de visita</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contacto"><i class="fas fa-phone"></i> Informacion de contacto</a></li>
-        </ol>
-        <hr>
-        <a id="carta" class="btn btn-outline-info" href="lab/carta.html">Carta</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background-color: #e3f2fd;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#biografia"><i class="fas fa-home"></i> Biografia<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pasatiempos"><i class="fab fa-hubspot"></i> Pasatiempos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lugares"><i class="fas fa-plane"></i> Lugares turisticos de visita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto"><i class="fas fa-phone"></i> Informacion de contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria"><i class="fas fa-wallet"></i> Galeria</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-address-book"></i> Mas sobre mi</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown10">
+                            <a class="dropdown-item" href="#">Peliculas</a>
+                            <a class="dropdown-item" href="#">Juegos</a>
+                            <a class="dropdown-item" href="#">Musica</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-hand-point-left"></i> Practicas</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown10">
+                            <a id="carta" class="dropdown-item" href="lab/carta.html">Carta</a>
+                            <a id="carta" class="dropdown-item" href="lab/iconos.html">Probando iconos</a>
+                            <a id="carta" class="dropdown-item" href="lab/labsocial.html">Social</a>
+                            <a id="carta" class="dropdown-item" href="lab/practica.html">Practica examen 01</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <hr>
-
-    <section>
-        <article id="biografia">
-            <div class="container card" style="width: 30rem;">
-                <img class="card-img-top" src="img/company.jpg" alt="Junior's Company">
-                <div class="card-body">
-                    <cite>Desde pequeño, y a lo largo de mis 21 años, he aprendido a no encajar, sino sobresalir. No esperar, hacerlo. Tampoco detenerme, empujar. No agachar la cabeza, sino saltar alto.</cite>
-                    <hr>
-                    <h5 class="card-title"> Informacion general</h5>
-                    <p class="card-text alert alert-success">Mi nombre es <strong><em>Jhonny Salazar Chilon</em></strong> tengo actualmente 21 años, naci el 20 de abril, físicamente soy de complexión delgada, una estatura de 1.65m, me considero una persona alegre, inquieta, sociable, curiosa,
-                        me caracterizo por la puntualidad y normalmente actuó espontáneamente. . Actualmente estudio en la UNC - Cajamarca Ing. Sistemas IX Ciclo. Me gustaría desarrollarme en la especializadad de desarrollo y administracion de proyectos.
-                    </p>
+    <!--Banner - img de inicio-->
+    <div id="banner">
+        <div class="letter">
+            <div class="letter-slider">
+                <div class="slider-titulo">
+                    <h1 class="animated lightSpeedIn">Un equipo de gigantes</h1>
                 </div>
+                <p id="texto" class="animated slideInUp">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore fugit officia explicabo commodi necessitatibus quod doloribus! Tempore quo maiores, consequatur, soluta corrupti quasi quibusdam cumque necessitatibus commodi dignissimos rerum magni!
+                </p>
             </div>
+        </div>
+    </div>
 
-            <div class="container row">
-                <article class="col-6">
-                    <a class="btn btn-outline-success" data-toggle="collapse" href="#collapseDatos" role="button" aria-expanded="false" aria-controls="collapseDatos">
-                        Mas Datos sobre mi ...
-                    </a>
-
-                    <div class="collapse" id="collapseDatos">
-                        <div class="bs-callout bs-callout-success card bg-light mb-3">
-                            <ul>
-                                <li>
-                                    <h6>Lugar nacimiento: <em>Cajamarca</em></h6>
-                                </li>
-                                <li>
-                                    <h6>Nombre: <em>Jhonny Salazar Chilon</em></h6>
-                                </li>
-                                <li>
-                                    <h6>Direccion: <em><abbr title="Pasaje">Pje. </abbr>Jose villanueva 890</em></h6>
-                                </li>
-                                <li>
-                                    <h6>
-                                        Estudios universitarios: <em><abbr title="Universidad Nacional de Cajamarca">UNC</abbr></em>
-                                    </h6>
-                                </li>
-                                <li>
-                                    <h6>Especialidad: <em>Ing. Sistemas IX Ciclo</em></h6>
-                                </li>
-                                <li>
-                                    <h6>Intereses: <em>Lograr desarrollarme como persona altamente efizaz en toda disciplina</em></h6>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="col-6 container" id="logo">
-                    <h6>Logo de ingenieria de Sistemas <abbr title="Universidad Nacional de Cajamarca">UNC</abbr></h6>
-                    <img class="img-fluid" src="img/CAMALEON-AMAZING-NARANJA-04-433x333.png" alt="" title="Logo Ing. Sistemas" width="" id="logito">
-                </article>
-            </div>
-            <hr>
+    <section id="cita">
+        <p class="text-center">
+            <h3 class="h3-fuente">"Piensa no solo en lo más logico, sino también en aquello que te apasiona"</h3>
+        </p>
     </section>
 
-    <section class="container">
-        <article class="col-6">
-            <a class="btn btn-outline-info" data-toggle="collapse" href="#collapsePasatiempos" role="button" aria-expanded="false" aria-controls="collapsePasatiempos">
-                        Pasatiempos ...
-                    </a>
-
-            <article class="collapse" id="collapsePasatiempos">
-                <div class="bs-callout bs-callout-info card bg-light mb-3">
-                    <ol>
-                        <li>Lectura</li>
-                        <li>Caminar</li>
-                        <li>Videojuegos</li>
-                        <li>Dibujar</li>
-                        <li>Pintar</li>
-                        <li>Nadar</li>
-                        <li>Juegos de mesa</li>
-                        <li>Ajedrez</li>
-                        <li>Crucigrama</li>
-                        <li>Excursion</li>
-                        <li>Ir de campamento</li>
-                        <li>Deportes de equipo</li>
-                        <li>Futbol</li>
-                        <li>Pesca</li>
-                        <li>Andar bicicleta</li>
-                        <li>Escuchar musica</li>
-                    </ol>
+    <section id="banner-fondo">
+        <section id="biografia" class="container">
+            <br>
+            <br>
+            <br>
+            <h2 class="text-center">Biografia</h2>
+            <br>
+            <article id="biografia">
+                <div class="container" style="width: 30rem;">
+                    <img class="card-img-top" src="img/company.jpg" alt="Junior's Company">
+                    <div class="card-body">
+                        <p class="card-text alert alert-info animated lightSpeedIn">
+                            <cite>Desde pequeño, y a lo largo de mis 21 años, he aprendido a no encajar, sino sobresalir. No esperar, hacerlo. Tampoco detenerme, empujar. No agachar la cabeza, sino saltar alto.</cite>
+                        </p>
+                        <hr>
+                        <h5 class="card-title"> Informacion general</h5>
+                        <p class="card-text alert alert-info animated slideInUp">Mi nombre es <strong><em>Jhonny Salazar Chilon</em></strong> tengo actualmente 21 años, naci el 20 de abril, físicamente soy de complexión delgada, una estatura de 1.65m, me considero una persona alegre, inquieta, sociable, curiosa,
+                            me caracterizo por la puntualidad y normalmente actuó espontáneamente. . Actualmente estudio en la UNC - Cajamarca Ing. Sistemas IX Ciclo. Me gustaría desarrollarme en la especializadad de desarrollo y administracion de proyectos.
+                        </p>
+                    </div>
                 </div>
             </article>
-        </article>
+        </section>
+        <br>
+        <br>
     </section>
+    <section>
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fas fa-database"></i> Datos generales
+                        </button>
+                    </h5>
+                </div>
 
-    <section class="container row" id="lugar">
-        <article class="col-4 card">
-            <img class="card-img-top" src="img/baños.jpg" alt="Baños del inca">
-            <h5 class="card-title"> Baños del inca</h5>
-            <p class="card-text alert alert-info">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi iusto minus atque ab vitae eligendi modi beatae qui ullam, ipsam obcaecati a quam blanditiis id fugiat. Reiciendis ad repudiandae cumque!
-            </p>
-        </article>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="container">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <h6 class="text-capitalize text-info text-left">Lugar de nacimiento:</h6>
+                                </div>
 
-        <article class="col-4 card">
-            <img class="card-img-top" src="img/santa.jpg" alt="Santa Apolonia">
-            <h5 class="card-title"> Santa Apolonia</h5>
-            <p class="card-text alert alert-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi incidunt perspiciatis repellendus quas facilis? Eius nesciunt unde ullam corrupti voluptate ut consequatur nihil exercitationem, eaque explicabo sit, reprehenderit, natus minima.
-            </p>
-        </article>
+                                <div class="col-8 ">
+                                    <p class="text-justify et-black et-black">Cajamarca</p>
+                                </div>
 
-        <article class="col-4 card">
-            <img class="card-img-top" src="img/cumbemayo.JPG" alt="Cumbemayo">
-            <h5 class="card-title"> Cumbemayo</h5>
-            <p class="card-text alert alert-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum odio eius maxime! Vitae ratione deserunt quos nobis similique nesciunt sit necessitatibus, omnis nisi quis exercitationem rerum iusto libero eos quas.
-            </p>
-        </article>
+                                <div class="col-4">
+                                    <h6 class="text-capitalize text-info text-left">Nombre:</h6>
+                                </div>
 
-        <article class="col-6 card">
-            <img class="card-img-top" src="img/ventanillas.jpg" alt="ventanillas">
-            <h5 class="card-title"> Ventanillas de Otuzco</h5>
-            <p class="card-text alert alert-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quos iusto sit maiores! Reiciendis eaque illo architecto quam quaerat similique earum nostrum tempora magnam delectus nobis distinctio sunt, nemo ullam.
-            </p>
-        </article>
+                                <div class="col-8">
+                                    <p class="text-justify et-black">Jhonny Salazar Chilon</p>
+                                </div>
 
-        <article class="col-6 card">
-            <img class="card-img-top" src="img/namora.jpg" alt="namora">
-            <h5 class="card-title"> Namora</h5>
-            <p class="card-text alert alert-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sed porro aliquam nobis accusamus, beatae hic repellat eaque minus, quisquam non modi facilis ratione incidunt aut eveniet repudiandae delectus sequi!
-            </p>
-        </article>
-    </section>
+                                <div class="col-4">
+                                    <h6 class="text-capitalize text-info text-left">Direccion:</h6>
+                                </div>
 
-    <div class="container">
-        <div class="bs-callout bs-callout-danger">
-            <h5>LOREM</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam alias odit tempore nobis laboriosam officia voluptate tenetur iusto ducimus praesentium minima recusandae ratione ut aliquam suscipit, quos distinctio sunt? Rem?</p>
+                                <div class="col-8">
+                                    <p class="text-justify et-black"><abbr title="Pasaje">Pje. </abbr>Jose villanueva 890</p>
+                                </div>
+
+                                <div class="col-4">
+                                    <h6 class="text-capitalize text-info text-left">Estudios universitarios:</h6>
+                                </div>
+
+                                <div class="col-8">
+                                    <p class="text-justify et-black"><abbr title="Universidad Nacional de Cajamarca">UNC</abbr></p>
+                                </div>
+
+                                <div class="col-4">
+                                    <h6 class="text-capitalize text-info text-left">Especialidad:</h6>
+                                </div>
+
+                                <div class="col-8">
+                                    <p class="text-justify et-black">Ing. Sistemas IX Ciclo</p>
+                                </div>
+
+                                <div class="col-4">
+                                    <h6 class="text-capitalize text-info text-left">Intereses:</h6>
+                                </div>
+
+                                <div class="col-8">
+                                    <p class="text-justify et-black text-warning"><em>Lograr desarrollarme como persona altamente efizaz en toda disciplina</em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="fas fa-project-diagram"></i> Pasatiempos
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4">
+                                <img class="rounded-circle mx-auto d-block" src="img/leer.jpg" alt="Leer">
+                                <div class="card-body">
+                                    <h5 class="card-title et-black">Leer</h5>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <img class="rounded-circle mx-auto d-block" src="img/caminar.jpg" alt="Leer">
+                                <div class="card-body">
+                                    <h5 class="card-title et-black">Caminar</h5>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <img class="rounded-circle mx-auto d-block" src="img/jugar-videojuegos.jpg" alt="Leer">
+                                <div class="card-body">
+                                    <h5 class="card-title et-black">Jugar videojuegos</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
+    <section id="banner-lugares">
+        <section class="container" id="lugar">
+            <br>
+            <br>
+            <br>
+            <h3 class="text-center">Lugares turisticos de visita</h3>
+            </i>
+            <div class="row">
+                <article class="col-4">
+                    <img class="card-img-top" src="img/baños.jpg" alt="Baños del inca" height="250px">
+                    <h5 class="card-title"> Baños del inca</h5>
+                    <p class="card-text alert alert-info">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi iusto minus atque ab vitae eligendi modi beatae qui ullam, ipsam obcaecati a quam blanditiis id fugiat. Reiciendis ad repudiandae cumque!
+                    </p>
+                </article>
+
+                <article class="col-4">
+                    <img class="card-img-top" src="img/santa.jpg" alt="Santa Apolonia">
+                    <h5 class="card-title"> Santa Apolonia</h5>
+                    <p class="card-text alert alert-info">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi iusto minus atque ab vitae eligendi modi beatae qui ullam, ipsam obcaecati a quam blanditiis id fugiat. Reiciendis ad repudiandae cumque!
+                    </p>
+                </article>
+
+                <article class="col-4">
+                    <img class="card-img-top" src="img/cumbemayo.JPG" alt="Cumbemayo" height="250px">
+                    <h5 class="card-title"> Cumbemayo</h5>
+                    <p class="card-text alert alert-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum odio eius maxime! Vitae ratione deserunt quos nobis similique nesciunt sit necessitatibus, omnis nisi quis exercitationem rerum iusto libero eos quas.
+                    </p>
+                </article>
+
+                <article class="col-6">
+                    <img class="card-img-top" src="img/ventanillas.jpg" alt="ventanillas" height="250px">
+                    <h5 class="card-title"> Ventanillas de Otuzco</h5>
+                    <p class="card-text alert alert-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quos iusto sit maiores! Reiciendis eaque illo architecto quam quaerat similique earum nostrum tempora magnam delectus nobis distinctio sunt, nemo ullam.
+                    </p>
+                </article>
+
+                <article class="col-6">
+                    <img class="card-img-top" src="img/llacanora.jpg" alt="namora" height="250px">
+                    <h5 class="card-title"> Namora</h5>
+                    <p class="card-text alert alert-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sed porro aliquam nobis accusamus, beatae hic repellat eaque minus, quisquam non modi facilis ratione incidunt aut eveniet repudiandae delectus sequi!
+                    </p>
+            </div>
+            </article>
+        </section>
+    </section>
 
     <!--Carousel-->
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide" />
+    <section class="container">
+        <br>
+        <br>
+        <br>
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 img-thumbnail" src="img/s1.jpg" data-src="holder.js/800x400?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-capitalize text-center">First slide label</h5>
+                        <p class="text-center">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 img-thumbnail" src="img/s2.jpg" data-src="holder.js/800x400?auto=yes&amp;bg=666&amp;fg=444&amp;text=Second slide" alt="Second slide" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-capitalize text-center">Second slide label</h5>
+                        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 img-thumbnail" src="img/s3.jpg" data-src="holder.js/800x400?auto=yes&amp;bg=555&amp;fg=333&amp;text=Third slide" alt="Third slide" />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-capitalize text-center">Third slide label</h5>
+                        <p class="text-center">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=666&amp;fg=444&amp;text=Second slide" alt="Second slide" />
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=555&amp;fg=333&amp;text=Third slide" alt="Third slide" />
-        </div>
-    </div>
-    <footer id="contacto">
-        Fecha:
-        <script>
-            document.write(new Date());
-        </script>
-        <a href="#inicio">Volver al inicio</a>
-        <address>@ Jhonny Salazar Chilon <abbr title="Universidad Nacional de Cajamarca">UNC</abbr> <br />
-                Última modificación: 28 de mayo de 2018
-                <p>Informacion de contacto: <a href="asalazarc14@unc.edu.pe" target="blank">
-                        asalazarc14@unc.edu.pe</a>.</p>
-        </address>
+    </section>
+
+    <footer>
+        <section class="container">
+            <section class="row">
+                <article class="col-4">
+                    <h3 class="text-uppercase text-success text-center">Jhonny Salazar Chilon</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat quisquam aliquid eius natus saepe, quas porro ex eos, quidem adipisci inventore. Officia laborum voluptatibus commodi blanditiis consequatur veniam quibusdam!</p>
+                </article>
+
+                <article class="col-4 align-items-center h-100">
+                    <article>
+                        Fecha:
+                        <script>
+                            document.write(new Date());
+                        </script>
+                    </article>
+
+                    <article>
+                        <address>
+                            Última modificación: 28 de mayo de 2018                            
+                        </address>
+                    </article>
+                </article>
+
+                <article class="col-4">
+                    <h3 class="text-uppercase text-success text-center">Datos de contacto</h3>
+                    <article class="container row">
+                        <article class="col-4">
+                            <i class="fas fa-money-check"></i>
+                        </article>
+
+                        <article class="col-8">
+                            <a class="text-info" href="asalazarc14@unc.edu.pe" target="blank">asalazarc14@unc.edu.pe</a>
+                        </article>
+
+                        <article class="col-4">
+                            <i class="fas fa-phone-volume"></i>
+                        </article>
+
+                        <article class="col-8">
+                            <p>942 286 297</p>
+                        </article>
+                    </article>
+                </article>
+            </section>
+        </section>
+
+        <section id="copyrigth">
+            <section class="container row">
+                <article class="col-5">
+                    <p>
+                        <address class="text-center">@ Jhonny Salazar Chilon</address>
+                    </p>
+                </article>
+
+                <article class="col-5">
+                    <p>
+                        <p class="text-center"><small>Ayudado de <a class="text-info" href="https://getbootstrap.com/" target="_blank">Bootstrap</small></p>
+                    </p>
+                </article>
+
+                <article class="col-2" id="contenedor-icon">
+                    <a class="text-center" id="icon-up" href="#" class="js-gotop"><i class="fas fa-arrow-up"></i></a>
+                </article>
+            </section>
+        </section>
 
         <div class="social-bar">
             <a href="https://www.facebook.com/autor" target="_blank" class="icon icon-facebook"></a>
